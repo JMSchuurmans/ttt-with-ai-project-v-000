@@ -1,5 +1,10 @@
 class TicTacToeController
 
+  def initialize
+    game = Game.new
+    game.play
+  end
+
   def call
     input = ""
 
