@@ -32,27 +32,22 @@ def one_player_game
   puts "Which token would you like to be? X or O?"
   input = gets.strip.upcase
   if input == "X"
-    Game.new.player_1 = Players::Human.new("X")
-    Game.new.player_2 = Players::Computer.new("O")
-    Game.new.board = Board.new
+    Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O"), board = Board.new).play
   elsif input == "O"
-    Game.new.player_1 = Players::Human.new("O")
-    Game.new.player_2 = Players::Computer.new("X")
+    Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Computer.new("X"), board = Board.new).play
   else
     puts "Invalid input."
   end
-  Game.new.play
+
 end
 
 def two_player_game
   puts "Player 1 will go first. Please choose X or O."
   input = gets.strip.upcase
   if input == "X"
-    Game.player_1 = Players::Human.new("X")
-    Game.player_2 = Players::Human.new("O")
+    Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
   elsif input == "O"
-    Game.player_1 = Players::Human.new("O")
-    Game.player_2 = Players::Human.new("X")
+    Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
   else
     puts "Invalid input."
     start
