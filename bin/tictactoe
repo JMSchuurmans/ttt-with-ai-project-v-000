@@ -62,6 +62,7 @@ def new_game
     start
   elsif input == "no" || "n"
     puts "Come back soon!"
+    exit
   end
 end
 
