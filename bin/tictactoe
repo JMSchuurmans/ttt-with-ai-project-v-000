@@ -55,6 +55,7 @@ def two_player_game
     Game.player_2 = Players::Human.new("X")
   else
     puts "Invalid input."
+    start
   end
 end
 
