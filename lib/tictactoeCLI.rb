@@ -1,6 +1,6 @@
 class TicTacToeController
 
-  def call
+  def start
     input = ""
 
     while input != "exit"
@@ -52,8 +52,4 @@ class TicTacToeController
       puts "Invalid input."
     end
   end
-
-
-
-
 end
