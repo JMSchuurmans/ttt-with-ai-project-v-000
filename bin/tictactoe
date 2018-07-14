@@ -2,4 +2,4 @@
 
 require_relative '../config/environment'
 
-TicTacToeController.new.start
+TicTacToeController.new
