@@ -4,7 +4,7 @@ module Players
     def move(board)
       move = nil
       move = rand(1..9).to_s
-      if board.valid_move(move)
+      if board.valid_move?(move)
         move
       else
         move(board)
