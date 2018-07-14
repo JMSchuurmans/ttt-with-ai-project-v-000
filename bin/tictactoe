@@ -47,7 +47,7 @@ def two_player_game
   if input == "X"
     Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
   elsif input == "O"
-    Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
+    Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Human.new("X"), board = Board.new).play
   else
     puts "Invalid input."
     start
