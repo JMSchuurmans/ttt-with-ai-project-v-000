@@ -60,7 +60,7 @@ def new_game
     start
   elsif input == "no" || "n"
     exit
-
-end 
+  end
+end
 
 start
