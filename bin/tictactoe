@@ -39,7 +39,6 @@ def one_player_game
     puts "Invalid input."
     start
   end
-
 end
 
 def two_player_game
