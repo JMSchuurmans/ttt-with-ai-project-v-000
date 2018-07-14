@@ -67,6 +67,7 @@ class TicTacToeController
       exit
     end
   end
+
+  start
 end
 
-start
