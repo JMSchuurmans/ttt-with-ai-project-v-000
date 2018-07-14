@@ -49,7 +49,6 @@ class Game
   def turn
     player = current_player
     current_move = player.move(@board)
-    @board.display
     if @board.valid_move?(current_move)
       @board.update(current_move, player)
     else
@@ -67,6 +66,5 @@ class Game
     if draw?
       puts "Cat's Game!"
     end
-    @board.display
   end
 end
