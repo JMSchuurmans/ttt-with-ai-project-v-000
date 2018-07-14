@@ -29,11 +29,11 @@ class TicTacToeController
     puts "Which token would you like to be? X or O?"
     input = gets.strip.upcase
     if input == "X"
-      Game.player_1 = Players::Human.new("X")
-      Game.player_2 = Players::Computer.new("O")
+      Game.new.player_1 = Players::Human.new("X")
+      Game.new.player_2 = Players::Computer.new("O")
     elsif input == "O"
-      Game.player_1 = Players::Human.new("O")
-      Game.player_2 = Players::Computer.new("X")
+      Game.new.player_1 = Players::Human.new("O")
+      Game.new.player_2 = Players::Computer.new("X")
     else
       puts "Invalid input."
     end
