@@ -31,7 +31,6 @@ class TicTacToeController
     if input == "X"
       Game.new.player_1 = Players::Human.new("X")
       Game.new.player_2 = Players::Computer.new("O")
-      Game.new.play
     elsif input == "O"
       Game.new.player_1 = Players::Human.new("O")
       Game.new.player_2 = Players::Computer.new("X")
