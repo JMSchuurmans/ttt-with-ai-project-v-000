@@ -53,9 +53,6 @@ class TicTacToeController
     end
   end
 
-  game = Game.new
-  game.play
-
 
 
 
