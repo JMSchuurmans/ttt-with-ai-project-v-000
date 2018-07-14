@@ -4,4 +4,4 @@ require_relative '../config/environment'
 
 TicTacToeController.new.start
 
-Game.new.play
+
