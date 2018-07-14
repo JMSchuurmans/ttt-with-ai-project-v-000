@@ -52,9 +52,9 @@ def two_player_game
     puts "Invalid input."
     start
   end
-
-  start if new_game
 end
+
+start if new_game
 
 def new_game
   puts "Shall we go again? Please input 'yes' or 'no'"
