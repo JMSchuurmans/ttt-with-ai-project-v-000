@@ -58,9 +58,9 @@ end
 
 def new_game
   puts "Shall we go again? Please input 'yes' or 'no'"
-  if input == "yes" || "y"
+  if input == "yes"
     start
-  elsif input == "no" || "n"
+  elsif input == "no"
     puts "Come back soon!"
     exit
   end
