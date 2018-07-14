@@ -37,6 +37,7 @@ class TicTacToeController
     else
       puts "Invalid input."
     end
+    Game.play
   end
 
   def two_player_game
