@@ -60,11 +60,12 @@ class Game
     while !over?
       turn
     end
-    if over?
+    if won?
       puts "Congratulations #{winner}!"
     end
     if draw?
       puts "Cat's Game!"
     end
+    @board.display
   end
 end
