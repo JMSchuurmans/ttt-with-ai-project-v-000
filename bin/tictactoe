@@ -26,6 +26,7 @@ end
 
 def zero_player_game
   Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), board = Board.new).play
+  start if new_game
 end
 
 def one_player_game
@@ -39,6 +40,7 @@ def one_player_game
     puts "Invalid input."
     start
   end
+  start if new_game
 end
 
 def two_player_game
@@ -52,9 +54,8 @@ def two_player_game
     puts "Invalid input."
     start
   end
+  start if new_game
 end
-
-start if new_game
 
 def new_game
   puts "Shall we go again? Please input 'yes' or 'no'"
