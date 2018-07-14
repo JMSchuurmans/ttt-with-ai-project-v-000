@@ -2,13 +2,13 @@ class TicTacToeController
 
   # def start
   #   input = ""
-  # 
+  #
   #   while input != "exit"
   #     puts "Welcome to Tic Tac Toe!"
   #     puts "How many players today? 0, 1, or 2?"
-  # 
+  #
   #     input = gets.strip
-  # 
+  #
   #     case input
   #     when "0"
   #       zero_player_game
@@ -19,12 +19,12 @@ class TicTacToeController
   #     end
   #   end
   # end
-  # 
+  #
   # def zero_player_game
   #   Game.player_1 = Players::Computer.new("X")
   #   Game.player_2 = Players::Computer.new("O")
   # end
-  # 
+  #
   # def one_player_game
   #   puts "Which token would you like to be? X or O?"
   #   input = gets.strip.upcase
@@ -38,7 +38,7 @@ class TicTacToeController
   #     puts "Invalid input."
   #   end
   # end
-  # 
+  #
   # def two_player_game
   #   puts "Player 1 will go first. Please choose X or O."
   #   input = gets.strip.upcase

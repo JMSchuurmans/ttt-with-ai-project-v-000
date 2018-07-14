@@ -56,3 +56,5 @@ def two_player_game
     puts "Invalid input."
   end
 end
+
+start
