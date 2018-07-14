@@ -25,8 +25,7 @@ def start
 end
 
 def zero_player_game
-  Game.player_1 = Players::Computer.new("X")
-  Game.player_2 = Players::Computer.new("O")
+  Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), board = Board.new).play
 end
 
 def one_player_game
