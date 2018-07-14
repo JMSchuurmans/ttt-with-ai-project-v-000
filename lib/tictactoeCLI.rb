@@ -6,6 +6,7 @@ class TicTacToeController
     while input != "exit"
       puts "Welcome to Tic Tac Toe!"
       puts "How many players today? 0, 1, or 2?"
+      puts "To exit, type exit."
 
       input = gets.strip
 
