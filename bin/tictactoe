@@ -58,6 +58,7 @@ start if new_game
 
 def new_game
   puts "Shall we go again? Please input 'yes' or 'no'"
+  input = gets.strip
   if input == "yes"
     start
   elsif input == "no"
