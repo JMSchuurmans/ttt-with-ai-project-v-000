@@ -37,6 +37,7 @@ def one_player_game
     Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Computer.new("X"), board = Board.new).play
   else
     puts "Invalid input."
+    start
   end
 
 end
