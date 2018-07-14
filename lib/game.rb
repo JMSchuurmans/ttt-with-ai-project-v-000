@@ -48,7 +48,7 @@ class Game
 
   def turn
     @board.display
-    puts "Please enter 1-9:"
+    puts "#{current_player} Please enter 1-9:"
     player = current_player
     current_move = player.move(@board)
     if @board.valid_move?(current_move)
