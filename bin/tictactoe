@@ -41,7 +41,7 @@ def one_player_game
   else
     puts "Invalid input."
   end
-  game.play
+  Game.new.play
 end
 
 def two_player_game
