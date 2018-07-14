@@ -1,9 +1,5 @@
 class TicTacToeController
 
-  def initialize
-    start
-  end
-
   def start
     input = ""
 
@@ -70,4 +66,3 @@ class TicTacToeController
 
   start
 end
-
