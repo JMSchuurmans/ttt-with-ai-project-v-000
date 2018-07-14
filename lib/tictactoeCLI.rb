@@ -62,8 +62,5 @@ class TicTacToeController
       puts "Come back soon!"
       exit
     end
-  
   end
-
-
 end
